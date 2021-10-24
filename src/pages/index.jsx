@@ -248,12 +248,15 @@ const IndexPage = () => (
             alignItems: 'center',
             justifyContent: 'center',
             py: [3, 4],
-            my: 3,
+            mt: 3,
           }}
         >
           <Container>
             <Flex flexDirection={['column', 'row']} justifyContent="center">
-              <Text as="p" sx={{ fontSize: 1, color: 'gray.500' }}>
+              <Text
+                as="p"
+                sx={{ fontSize: 1, color: 'gray.500', textAlign: 'center' }}
+              >
                 Contact: johannesklumpe@gmail.com
               </Text>
             </Flex>
