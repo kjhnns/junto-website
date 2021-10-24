@@ -20,7 +20,11 @@ const IndexPage = () => (
       <Flex flexDirection="column" alignItems="center">
         <Container>
           <Flex flexDirection="column" my={[2, 3]}>
-            <Flex flexDirection={['column-reverse', 'row']} mx={[0, 4, 4, 0]}>
+            <Flex
+              flexDirection={['column-reverse', 'row']}
+              mx={[0, 4, 4, 0]}
+              mb={3}
+            >
               <Box width={['100%', '50%']} alignItems="center">
                 <Text
                   as="h1"
@@ -203,9 +207,9 @@ const IndexPage = () => (
                   textAlign: ['center', 'left'],
                 }}
               >
-                <b>You want to see progress fast and start too big instead.</b>{' '}
-                Start with baby steps and give yourself time to grow. Do just
-                one pushup, read just one page, write just one word, and you are
+                <b>You want to see progress fast and start too big.</b> Start
+                with baby steps and give yourself time to grow. Do just one
+                pushup, read just one page, write just one word, and you are
                 already doing more than yesterday.
               </Text>
               <Text
