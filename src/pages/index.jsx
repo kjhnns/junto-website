@@ -166,6 +166,7 @@ const IndexPage = () => (
           <Container>
             <Text
               as="p"
+              id="about"
               sx={{
                 fontSize: [2, 3],
                 lineHeight: 1.5,
@@ -190,8 +191,8 @@ const IndexPage = () => (
                   textAlign: ['center', 'left'],
                 }}
               >
-                You chase after goals instead of changing your behavior. Don’t
-                try to run a marathon, try to become a runner.
+                <b>You chase after goals instead of changing your behavior.</b>{' '}
+                Don’t try to run a marathon, try to become a runner.
               </Text>
               <Text
                 as="p"
@@ -202,9 +203,9 @@ const IndexPage = () => (
                   textAlign: ['center', 'left'],
                 }}
               >
-                You want to see progress fast and start too big instead. Start
-                with baby steps and give yourself time to grow. Do just one
-                pushup, read just one page, write just one word, and you are
+                <b>You want to see progress fast and start too big instead.</b>{' '}
+                Start with baby steps and give yourself time to grow. Do just
+                one pushup, read just one page, write just one word, and you are
                 already doing more than yesterday.
               </Text>
               <Text
@@ -216,10 +217,12 @@ const IndexPage = () => (
                   textAlign: ['center', 'left'],
                 }}
               >
-                You only try to change yourself instead of changing your
-                environment. Don’t expect to always have a book with you.
-                Download a book to your phone and make it very easy to read
-                wherever you are.
+                <b>
+                  You only try to change yourself instead of changing your
+                  environment.
+                </b>{' '}
+                Don’t expect to always have a book with you. Download a book to
+                your phone and make it very easy to read wherever you are.
               </Text>
 
               <Box textAlign="center">
@@ -234,6 +237,26 @@ const IndexPage = () => (
                 </Button>
               </Box>
             </Box>
+          </Container>
+        </Flex>
+
+        <Flex
+          sx={{
+            width: '100%',
+            bg: 'gray.900',
+            color: 'gray.100',
+            alignItems: 'center',
+            justifyContent: 'center',
+            py: [3, 4],
+            my: 3,
+          }}
+        >
+          <Container>
+            <Flex flexDirection={['column', 'row']} justifyContent="center">
+              <Text as="p" sx={{ fontSize: 1, color: 'gray.500' }}>
+                Contact: johannesklumpe@gmail.com
+              </Text>
+            </Flex>
           </Container>
         </Flex>
       </Flex>

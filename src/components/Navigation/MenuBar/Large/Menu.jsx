@@ -39,7 +39,7 @@ const Menu = () => (
         mr: [0, 3, 3, 4],
       }}
     >
-      <Link to="/">
+      <Link to="/#about">
         <Flex
           alignItems="center"
           justifyContent="center"
