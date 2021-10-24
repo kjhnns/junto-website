@@ -79,11 +79,7 @@ module.exports = {
         // datalayer to be set before GTM is loaded
         // should be a stringified object or object
         // Defaults to null
-        defaultDataLayer: () => {
-          return {
-            platform: 'junto-website',
-          }
-        },
+        defaultDataLayer: { platform: 'juntowebsite' },
       },
     },
   ],
