@@ -37,7 +37,7 @@ const Logo = ({ href }) => (
           sx={{
             pl: 3,
             letterSpacing: '1px',
-            color: 'gray.100',
+            color: 'gray.900',
             fontSize: '20px',
             display: ['none', 'flex'],
           }}

@@ -17,16 +17,24 @@ const IndexPage = () => (
       <Flex flexDirection="column" alignItems="center">
         <Container>
           <Flex flexDirection="column" my={[2, 3]}>
-            <Flex flexDirection="row">
-              <Box width="50%" alignItems="center">
-                <Text sx={{ fontSize: [4, 5] }}>
+            <Flex flexDirection={['column', 'row']} mx={[0, 4, 4, 0]}>
+              <Box width={['100%', '50%']} alignItems="center">
+                <Text
+                  sx={{
+                    fontSize: [3, 3, 4, 5],
+                    mx: [2, 2, 0, 0],
+                    lineHeight: 2,
+                    textAlign: ['center', 'left'],
+                  }}
+                >
                   Junto helps you every day to become a better version of
                   yourself. Through small steps and motivating streaks you build
                   long-lasting good habits and break bad ones.{' '}
                 </Text>
               </Box>
-              <Box width="50%" alignItems="flex-end">
+              <Box width={['100%', '50%']} alignItems="flex-end">
                 <img
+                  sx={{ textAlign: 'center' }}
                   width="80%"
                   src={Screenshot}
                   alt="junto - simple habit tracking"
@@ -34,6 +42,7 @@ const IndexPage = () => (
               </Box>
             </Flex>
           </Flex>
+          <Flex sx={{ width: '100%', background: 'gray.900' }}></Flex>
         </Container>
       </Flex>
     </Box>

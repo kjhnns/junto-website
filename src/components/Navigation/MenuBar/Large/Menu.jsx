@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from '@components/Link'
+import { Button } from '@components/Button'
 import { Flex, Box } from '@components/Grid'
 
 const Wrapper = {
@@ -15,34 +16,34 @@ const Menu = () => (
   <Flex sx={Wrapper}>
     <Box
       sx={{
-        display: ['none', 'flex'],
-        color: 'white',
-        mr: [0, 2, 3, 4],
+        display: ['flex', 'flex'],
+        color: 'gray.900',
+        mr: [3, 3, 3, 4],
       }}
     >
-      <Link to="https://app.junto-habits.com">
+      <Button as={Link} to="https://app.junto-habits.com">
         <Flex
           alignItems="center"
           justifyContent="center"
-          sx={{ color: 'white' }}
+          // sx={{ color: 'gray.900' }}
         >
-          App
+          Track Now
         </Flex>
-      </Link>
+      </Button>
     </Box>
 
     <Box
       sx={{
         display: ['none', 'flex'],
-        color: 'white',
-        mr: [0, 2, 3, 4],
+        color: 'gray.900',
+        mr: [0, 3, 3, 4],
       }}
     >
       <Link to="/">
         <Flex
           alignItems="center"
           justifyContent="center"
-          sx={{ color: 'white' }}
+          sx={{ color: 'gray.900' }}
         >
           About
         </Flex>

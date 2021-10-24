@@ -8,16 +8,16 @@ import { Menu } from './Menu'
 const Large = () => (
   <Box
     sx={{
-      display: ['none', 'flex', null, null],
+      display: ['flex', 'flex', null, null],
       width: '100%',
       margin: 'auto',
       flexDirection: 'row',
-      bg: 'gray.900',
+      // bg: 'gray.900',
     }}
   >
     <Box
       sx={{
-        display: ['none', 'flex', null, null],
+        display: ['flex', 'flex', null, null],
         width: '100%',
         maxWidth: '1800px',
         margin: 'auto',
@@ -25,7 +25,7 @@ const Large = () => (
         flexDirection: 'row',
       }}
     >
-      <Logo href="/dashboard" />
+      <Logo href="/" />
       <Menu />
     </Box>
   </Box>
