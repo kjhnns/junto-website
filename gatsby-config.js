@@ -54,24 +54,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [
-          `/dashboard/`,
-          `/dashboard/*`,
-          `/dashboard/details/*`,
-          `/settings/*`,
-        ],
-      },
-    },
     `gatsby-plugin-theme-ui`,
-    {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: {
-        prefixes: [`/dashboard/*`, `/dashboard/details/*`, `/settings/*`],
-      },
-    },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
