@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from '@components/Link'
+import { Link, OutboundLink } from '@components/Link'
 import { Button } from '@components/Button'
 import { Layout } from '@components/Layout'
 import { SEO } from '@components/SEO'
@@ -258,10 +258,29 @@ const IndexPage = () => (
           <Container>
             <Flex flexDirection={['column', 'row']} justifyContent="center">
               <Text
-                as="p"
-                sx={{ fontSize: 1, color: 'gray.500', textAlign: 'center' }}
+                sx={{
+                  fontSize: 1,
+                  color: 'gray.500',
+                  textAlign: 'center',
+                  textDecoration: 'none',
+                }}
+                as={OutboundLink}
+                mr={3}
+                href="mailto:johannesklumpe@gmail.com"
               >
-                Contact: johannesklumpe@gmail.com
+                Contact
+              </Text>
+              <Text
+                sx={{
+                  fontSize: 1,
+                  color: 'gray.500',
+                  textAlign: 'center',
+                  textDecoration: 'none',
+                }}
+                as={Link}
+                to="/terms"
+              >
+                Terms
               </Text>
             </Flex>
           </Container>
