@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Link, OutboundLink } from '@components/Link'
 import { Layout } from '@components/Layout'
 import { SEO } from '@components/SEO'
 import { MenuBar } from '@components/Navigation'
 import { Flex, Box } from '@components/Grid'
 import { Text } from '@components/Typography'
 import { Container } from '@components/Container'
+import Footer from '@components/Footer'
 
 const TermsPage = () => (
   <Layout>
@@ -16,8 +16,8 @@ const TermsPage = () => (
 
       <Flex flexDirection="column" alignItems="center">
         <Container>
-          <Flex flexDirection="column">
-            <Text as="h1" mb={4}>
+          <Flex flexDirection="column" mx={3}>
+            <Text as="h1" mb={4} mt={5}>
               End User License Agreement
             </Text>
             <Text as="p" mb={3}>
@@ -101,47 +101,7 @@ const TermsPage = () => (
           </Flex>
         </Container>
       </Flex>
-      <Flex
-        sx={{
-          width: '100%',
-          bg: 'gray.900',
-          color: 'gray.100',
-          alignItems: 'center',
-          justifyContent: 'center',
-          py: [3, 4],
-          mt: 3,
-        }}
-      >
-        <Container>
-          <Flex flexDirection={['column', 'row']} justifyContent="center">
-            <Text
-              sx={{
-                fontSize: 1,
-                color: 'gray.500',
-                textAlign: 'center',
-                textDecoration: 'none',
-              }}
-              as={OutboundLink}
-              mr={3}
-              href="mailto:johannesklumpe@gmail.com"
-            >
-              Contact
-            </Text>
-            <Text
-              sx={{
-                fontSize: 1,
-                color: 'gray.500',
-                textAlign: 'center',
-                textDecoration: 'none',
-              }}
-              as={Link}
-              to="/terms"
-            >
-              Terms
-            </Text>
-          </Flex>
-        </Container>
-      </Flex>
+      <Footer />
     </Box>
   </Layout>
 )

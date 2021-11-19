@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, OutboundLink } from '@components/Link'
+import { Link } from '@components/Link'
 import { Button } from '@components/Button'
 import { Layout } from '@components/Layout'
 import { SEO } from '@components/SEO'
@@ -8,6 +8,7 @@ import { MenuBar } from '@components/Navigation'
 import { Flex, Box } from '@components/Grid'
 import { Text } from '@components/Typography'
 import { Container } from '@components/Container'
+import Footer from '@components/Footer'
 import Screenshot from '../images/screenshots/screenshot.png'
 import Collage from '../images/screenshots/collage.png'
 
@@ -135,8 +136,8 @@ const IndexPage = () => (
                   }}
                 >
                   Motivations cluster your habits to help you keep track of the
-                  bigger picture. You can group different mixes of habits to all
-                  your various motivations.
+                  bigger picture. Create various habit mixes to reflect your
+                  motivations.
                 </Text>
               </Box>
             </Flex>
@@ -225,8 +226,9 @@ const IndexPage = () => (
                   You only try to change yourself instead of changing your
                   environment.
                 </b>{' '}
-                Don’t expect to always have a book with you. Download a book to
-                your phone and make it very easy to read wherever you are.
+                Let's just be honest, you will not go to the gym if you need to
+                take the bus for 30 minutes. Try to eliminate the friction and
+                make your habits too easy to skip.
               </Text>
 
               <Box textAlign="center">
@@ -243,49 +245,8 @@ const IndexPage = () => (
             </Box>
           </Container>
         </Flex>
-
-        <Flex
-          sx={{
-            width: '100%',
-            bg: 'gray.900',
-            color: 'gray.100',
-            alignItems: 'center',
-            justifyContent: 'center',
-            py: [3, 4],
-            mt: 3,
-          }}
-        >
-          <Container>
-            <Flex flexDirection={['column', 'row']} justifyContent="center">
-              <Text
-                sx={{
-                  fontSize: 1,
-                  color: 'gray.500',
-                  textAlign: 'center',
-                  textDecoration: 'none',
-                }}
-                as={OutboundLink}
-                mr={3}
-                href="mailto:johannesklumpe@gmail.com"
-              >
-                Contact
-              </Text>
-              <Text
-                sx={{
-                  fontSize: 1,
-                  color: 'gray.500',
-                  textAlign: 'center',
-                  textDecoration: 'none',
-                }}
-                as={Link}
-                to="/terms"
-              >
-                Terms
-              </Text>
-            </Flex>
-          </Container>
-        </Flex>
       </Flex>
+      <Footer />
     </Box>
   </Layout>
 )
